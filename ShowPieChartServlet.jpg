@@ -1,0 +1,1411 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0082)https://auth.airtellive.com/central-authn -->
+<HTML><HEAD><TITLE>airtel Online Bill Payment - Postpaid Mobile, Broadband, Landline Bill Pay & Digital TV Recharge</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+
+  <script src="/pics/js/jquery-1.9.1.js"></script>
+  <script src="/pics/js/jquery-ui.js"></script>
+
+<script>
+function get(name){
+   if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+      return decodeURIComponent(name[1]);
+}
+</script>
+    
+  <script>
+  $(function() {
+	  
+    $( "#accordion" ).accordion({ active: 0});
+
+	if(get('src')=='corp')
+	{
+$( "#accordion" ).accordion('option','active',5);
+		}
+  });
+  </script>
+<STYLE type=text/css>
+
+*{margin:0; padding:0; list-style:none; outline:none;}
+body {color:#595959; font:normal 11px Arial,Helvetica,sans-serif; background:url(//pics/images/bg_main.gif) top left repeat; }
+img, a{border:0; outline:none; color:#ec1b2e;}
+.spacer1{height:20px; float:left; width:100%;}	
+.clearBoth{width:100%; float:left; margin-bottom:15px; margin-left:0!important;}
+	
+#container{width:773px; margin:0 auto; background:#fff; overflow:hidden;}
+h2{font-size:13px; margin-bottom:10px;}
+
+p{margin-bottom:15px; clear:both;}
+.innerSection{width:711px; margin:0 auto;}
+.logo{text-align:right; padding-top:26px;}
+.navigation{background:url(/pics/images/bottom_strip.jpg) no-repeat bottom left; padding-bottom:7px; overflow:hidden; margin-bottom:15px;}
+.navigation ul  li{background:url(/pics/images/nav_left.gif) no-repeat top left; float: left; height: 25px; line-height: 25px;}
+.navigation ul li span{background:url(/pics/images/nav_right.gif) no-repeat top right; color: #FFFFFF; display: block; font-size: 13px; font-weight: bold; margin-left: 5px; padding: 0 22px 0 15px;}
+
+#accordion{width:582px; float:left;}
+	.topline{font-size:17px; font-weight:bold;}
+	.topline strong{color:#ee1b2e;}
+	#accordion h3{font-size:14px; font-weight:normal; background:url(/pics/images/heading_bg.gif) no-repeat top left; height:36px; line-height:36px; padding-left:12px; margin-top:2px; border-bottom:2px solid #fff;}
+	#accordion h3 a{background:url(/pics/images/arrowRight.gif) no-repeat left 8px; text-decoration:none; padding-left:25px; display:block; color:#595959;}
+	#accordion h3.active a{background:url(/pics/images/arrowDown.gif) no-repeat left 8px; text-decoration:none; padding-left:25px; display:block; color:#ee1b2e;}
+	#accordion .details{border:1px solid #dedede; border-top:0; padding:15px 10px 15px 40px; overflow:hidden; position:relative; top:-3px;}
+	#accordion .details img{float:left;}
+	#accordion .details div.rightBox{font-size:13px; width:430px; margin-left:20px; float:left;}	
+	#accordion .details .leftSection{width:300px; float:left; margin-left:0;}
+		.leftSection ul{margin-bottom:15px;}
+		.leftSection ul li{background:url(/pics/images/arrow2.jpg) no-repeat left 5px; padding:0 0 5px 13px;}
+	
+	#accordion .details .rightSection{width:213px; float:right; margin-left:0;}
+		.formBox{border-left:1px solid #c3bebe; border-right:1px solid #c3bebe; background-color:#f7f7f6; padding:15px 15px 2px; text-align:right; clear:both;}
+		.formBox div{margin-bottom:10px;}
+		.formBox label{width:65px; float:left; font-size:11px;}
+		
+		.formBox2{border-left:1px solid #c3bebe; border-right:1px solid #c3bebe; background-color:#f7f7f6; padding:15px 15px 2px; font-size:12px; overflow:hidden;}		
+		.formBox2 a img{margin-top:5px;}
+		.formBox2 ul li{background:url(/pics/images/arrow.jpg) no-repeat left 6px; padding:0 0 5px 13px;}
+		.lastRow{margin-top:10px;}
+		.privacy{font-size:11px; margin:0; padding:10px 0 0;}
+	
+	
+		
+.footer{background:url(/pics/images/fotter_bg.gif) repeat-x top left; color:#fff; padding:10px; width:753px; float:left; margin-top:20px;}
+.footer div{float:left;}
+.footer div.disclaimer{ float:right;}
+.footer div.disclaimer a{color:#F0B3B3; text-decoration:none; font:normal 10px  Verdana,Arial,Helvetica,sans-serif;}
+
+
+.td-class{
+font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; color:#5f5f5f;
+}
+.foryou_hm {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #600101; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.arial10black {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.arial11black {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.txtbox_hm {
+	BORDER-BOTTOM: #a9a9a9 1px solid; BORDER-LEFT: #a9a9a9 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 13px; COLOR: #000000; FONT-SIZE: 10px; BORDER-TOP: #a9a9a9 1px solid; BORDER-RIGHT: #a9a9a9 1px solid
+}
+.btn {
+	BORDER-BOTTOM: #a9a9a9 1px solid; BORDER-LEFT: #a9a9a9 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 15px; COLOR: #000000; FONT-SIZE: 10px; BORDER-TOP: #a9a9a9 1px solid; BORDER-RIGHT: #a9a9a9 1px solid
+}
+.txtarea {
+	BORDER-BOTTOM: #a9a9a9 1px solid; BORDER-LEFT: #a9a9a9 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 10px; BORDER-TOP: #a9a9a9 1px solid; BORDER-RIGHT: #a9a9a9 1px solid
+}
+.arial10green {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #127c8c; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.news_headlines {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #16a3c5; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.btn_hm {
+	BORDER-BOTTOM: #a9a9a9 1px solid; BORDER-LEFT: #a9a9a9 1px solid; BACKGROUND-COLOR: #b3b3b3; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 13px; COLOR: #ffffff; FONT-SIZE: 10px; BORDER-TOP: #a9a9a9 1px solid; BORDER-RIGHT: #a9a9a9 1px solid
+}
+.bottomtxt {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #f0b3b3; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.arial14green {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #417062; FONT-SIZE: 14px; TEXT-DECORATION: none
+}
+.tabs_de {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #424141; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.tabs_de A:link {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #424141; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.tabs_de A:active {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #424141; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.tabs_de A:hover {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #f45354; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.tabs_de A:visited {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #424141; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.tabs_ac {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #8b8989; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.arial12grey {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.arial11grey2 {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.arial11grey {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.arial11grey2 A:link {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.arial11grey2 A:visited {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.arial11grey2 A:active {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #f45354; FONT-SIZE: 11px; TEXT-DECORATION: underline
+}
+.arial11grey2 A:hover {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #f45354; FONT-SIZE: 11px; TEXT-DECORATION: underline
+}
+.bread_crumbs {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #127c8c; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.red_heading {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #e12035; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.red_heading_n {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #e12035; FONT-SIZE: 15px; TEXT-DECORATION: none
+}
+.verdana11black {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.arial11red {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #d90b0c; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.mediacenter_date {
+	FONT-STYLE: italic; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #9e9c9c; FONT-SIZE: 11px
+}
+.leftnav {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.leftnav_n {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.bodytext {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #4c4c4c; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.bodylinks {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #4c4c4c; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.bodylinks A:link {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #4c4c4c; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.bodylinks A:visited {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #2a81f6; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.bodylinks A:active {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #4c4c4c; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.bodylinks A:hover {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #d90b0c; FONT-SIZE: 11px; TEXT-DECORATION: underline
+}
+.bodytxt_b_btmborder {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #4c4c4c; FONT-SIZE: 12px; BORDER-TOP: 0px; FONT-WEIGHT: normal; BORDER-RIGHT: 0px; TEXT-DECORATION: none
+}
+.bodytext_border {
+	BORDER-BOTTOM: #636363 1px dotted; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #4c4c4c; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.leftnav_active {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.blue_heading {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #3aa8b6; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.leftnav_active_n {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.linktext {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #007e9d; FONT-SIZE: 11px; TEXT-DECORATION: underline
+}
+.heading_form {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #686686; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.blue_heading_n {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #47a0a7; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.bodytextbold {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #4c4c4c; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.bodytext_blue {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #09a3b4; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.blue_text {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #006093; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.verticalspace_table {
+	BORDER-BOTTOM: #dfdfdf 3px double; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.horizontalspace_table {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #09a3b4; BORDER-RIGHT: #dfdfdf 3px double; TEXT-DECORATION: none
+}
+.horizontalspace2 {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; BORDER-RIGHT: #dfdfdf 1px solid; TEXT-DECORATION: none
+}
+.horizontalspace3 {
+	BORDER-LEFT: #dfdfdf 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.arial14black {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.whttext {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #ffffff; FONT-SIZE: 11px
+}
+.hellotunes_txt {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #c54e4c; FONT-SIZE: 10px
+}
+.datacard_ac {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #b4e0d7; FONT-SIZE: 11px
+}
+.arial12grey {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.white_text {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #ffffff; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.arial14green {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #62928c; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.arial11greenunderline {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #198578; FONT-SIZE: 11px; TEXT-DECORATION: underline
+}
+.verdana15green {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #62928c; FONT-SIZE: 15px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.arial14greenunderline {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #198578; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.verdana16black {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 18px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.arial12green {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #198578; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.whitetext {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #ffffff; FONT-SIZE: 14px; TEXT-DECORATION: none
+}
+.arial12greyborder {
+	BORDER-BOTTOM: #747474 1px solid; BORDER-LEFT: #747474 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #747474; FONT-SIZE: 12px; BORDER-TOP: #747474 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #747474 1px solid; TEXT-DECORATION: none
+}
+.arial12darkgrey {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #585858; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.arial16black {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 16px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.arial12darkgreyborder {
+	BORDER-BOTTOM: #cccbcb 1px solid; BORDER-LEFT: #cccbcb 1px solid; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #585858; FONT-SIZE: 12px; BORDER-TOP: #cccbcb 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #cccbcb 1px solid; TEXT-DECORATION: none
+}
+.arial11greyborder {
+	BORDER-BOTTOM: #cccbcb 1px solid; BORDER-LEFT: #cccbcb 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 11px; BORDER-TOP: #cccbcb 1px solid; BORDER-RIGHT: #cccbcb 1px solid; TEXT-DECORATION: none
+}
+.arial12darkgreyborder2 {
+	BORDER-BOTTOM: #cccbcb 0px; BORDER-LEFT: #cccbcb 1px solid; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #585858; FONT-SIZE: 12px; BORDER-TOP: #cccbcb 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #cccbcb 1px solid; TEXT-DECORATION: none
+}
+.arial11greyborder2 {
+	BORDER-BOTTOM: #cccbcb 0px; BORDER-LEFT: #cccbcb 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 11px; BORDER-TOP: #cccbcb 1px solid; BORDER-RIGHT: #cccbcb 1px solid; TEXT-DECORATION: none
+}
+.whttxtbold {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #ffffff; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.bodytext2 {
+	BORDER-BOTTOM: #636363 0px; BORDER-LEFT: #636363 0px; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #4c4c4c; FONT-SIZE: 11px; BORDER-TOP: #636363 0px; BORDER-RIGHT: #636363 0px; TEXT-DECORATION: none
+}
+.soundcatcherredtxt {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #c92a20; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.arial12red {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #a71817; FONT-SIZE: 12px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.chkmail {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #36739f; FONT-SIZE: 11px
+}
+.arial10grey {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7f7f7f; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.leftnav_hd {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #838282; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.leftnav_small {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #7b7b7b; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.arial11green {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #198578; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.cannot_find {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #e12035; FONT-SIZE: 35px; FONT-WEIGHT: 100; TEXT-DECORATION: none
+}
+.my_account_17red {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Humnst777 BT; COLOR: #ec1c2c; FONT-SIZE: 17px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.my_account11 {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #333333; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.my_accountpage_text {
+	LINE-HEIGHT: 14px; FONT-FAMILY: Verdana; COLOR: #666666; CLEAR: both; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.flat {
+	BORDER-BOTTOM: #cecece 1px solid; BORDER-LEFT: #cecece 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 113px; FONT-FAMILY: Tahoma; HEIGHT: 18px; COLOR: #000000; FONT-SIZE: 11px; BORDER-TOP: #cecece 1px solid; BORDER-RIGHT: #cecece 1px solid
+}
+HTML {
+	MIN-HEIGHT: 100%; MARGIN-BOTTOM: 1px
+}
+
+
+</STYLE>
+<!--link href="/pics/airtel09.css" rel="stylesheet" type="text/css"-->
+<SCRIPT language=JavaScript>
+function getCookie(c_name)
+{
+  if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=");
+  if (c_start!=-1)
+    {
+    c_start=c_start + c_name.length+1;
+    c_end=document.cookie.indexOf(";",c_start);
+    if (c_end==-1) c_end=document.cookie.length;
+    return unescape(document.cookie.substring(c_start,c_end));
+    }
+  }
+  return "";
+}// getCookie
+
+function onBodyLoad() {
+	var urlInCookie = getCookie('esCookie');
+	delete_all_cookies("/","PD-S-SESSION-ID");
+	//Changed for stopping cares junction
+	var aPosition =window.location.href.indexOf("/cares");
+	if(aPosition!=-1 || (window.location.href=="https://ebpp.airtelworld.com/") || (window.location.href=="https://ebpp.airtelworld.com"))
+	{
+	window.location.href="https://ebpp.airtelworld.com/myaccount/";
+	}
+		//End:Changed for stopping cares junction
+
+	var url = window.location.href;
+	//alert("url:::"+url);
+	// Case:- When Login Failed then page rendered is Login Page but in window location it is pkms.login
+	// If this is the case then we have to replace window location href with document referrer url to enable re-login try..
+	if (url != null && url.indexOf("pkmslogin.form") != -1){
+		var newWindowURL = document.referrer;
+		window.location.href = newWindowURL;
+	}else if (url != null && url.indexOf("escares") != -1) {
+		// Case:- After Logout Portal should take to EsCares Portal Application.. for that we set some cookie and check the
+		// cookie to finally redirect..
+		var exdate=new Date();
+		exdate.setDate(exdate.getDate()+1);
+		//https://auth.airtelworld.com/central-authn?bharti-net&https://ebpp.airtelworld.com/escares/wps/myportal
+		var total_length = url.length;
+		var index_Of_Amp = url.indexOf("&");
+		if (index_Of_Amp != -1){
+			url = url.substring(index_Of_Amp+1,total_length);
+			document.cookie="esCookie="+url+";expires="+exdate.toGMTString()+'; path=/';
+		}
+	}else if (url != null && (url.indexOf("pkmslogout") != -1) ){
+		// Case:- After Logout Portal takes to Login page of MAS.. We then check esCookie for final URL otherwise.. we consider
+		// SelfCare as default site where we should go after logout..
+		if (urlInCookie != "") {
+			window.location.href = urlInCookie;
+		}else{
+			var timeZone = new Date().getTimezoneOffset();
+			if("0"==timeZone || "-60"==timeZone){
+				window.location.href = "https://ebpp.airtelworld.com/myaccount/";
+			} else {
+				window.location.href = "http://airtel.in/wps/wcm/connect/airtel.in/airtel.in/promos/logout/";
+			}
+		}
+	}
+	return "";
+}// onBodyLoad
+
+function onKeyDown() {
+  // current pressed key
+  var pressedKey = String.fromCharCode(event.keyCode).toLowerCase();
+
+  if (event.ctrlKey && (pressedKey == "c" ||
+                        pressedKey == "v" )) {
+    // disable key press porcessing
+    event.returnValue = false;
+  }
+} // onKeyDown
+
+function clickedButtonInd() {
+	if(form3.password.value!="" && form3.username.value!="") {
+		form3.clicked.value="1";
+		form3.submit();
+		return true;
+	}
+	return false;
+}// clickedButton
+
+function clickedButton() {
+	if(form1.password.value!="" && form1.username.value!="") {
+		form1.clicked.value="1";
+		return true;
+	}
+	return false;
+}// clickedButton
+
+function clickedLinkInd() {
+	form3.clicked.value="1";
+	var path=window.location.href;
+	return true;
+}// clickedLink
+
+function clickedLink() {
+	form1.clicked.value="1";
+	var path=window.location.href;
+	return true;
+}// clickedLink
+
+function clickedButtonTRAI() {
+	if(form2.password.value!="" && form2.username.value!="") {
+		form2.clicked.value="1";
+		return true;
+	}
+	return false;
+}//clickedButtonTRAI
+
+function clickedLinkTRAI() {
+	form2.clicked.value="1";
+	var path=window.location.href;
+	return true;
+}//clickedLinkTRAI
+
+
+</SCRIPT>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.18876">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24564614-1']);
+  _gaq.push(['_setCustomVar',1,'Web Seal','Login Page',2]);
+  _gaq.push(['_trackPageview','login page']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</HEAD>
+<BODY onload=javascript:onBodyLoad()>
+<SCRIPT language=JavaScript> <!--
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// -->
+
+</SCRIPT>
+
+<SCRIPT language=javascript>
+var userName = "unauthenticated";
+
+var errMsg = "";
+if(errMsg != null && errMsg != ""){
+	errMsg = errMsg.substring(errMsg.indexOf(" ")+1);
+	alert(errMsg);
+}
+
+
+var warningString = "<B>WARNING:</B> To maintain your login session, make sure that your browser is configured to accept Cookies.";
+document.cookie = 'acceptsCookies=yes';
+if(document.cookie == ''){
+	document.write(warningString);
+}
+else{
+	document.cookie = 'acceptsCookies=yes; expires=Fri, 13-Apr-1970 00:00:00 GMT';
+}
+
+var urlpath=window.location.href;
+
+
+
+function Trim(TRIM_VALUE){
+	if(TRIM_VALUE.length < 1){
+		return"";
+	}
+	TRIM_VALUE = RTrim(TRIM_VALUE);
+	TRIM_VALUE = LTrim(TRIM_VALUE);
+	if(TRIM_VALUE==""){
+		return "";
+	}
+	else{
+		return TRIM_VALUE;
+	}
+}
+
+
+
+function RTrim(VALUE){
+	var w_space = String.fromCharCode(32);
+	var v_length = VALUE.length;
+	var strTemp = "";
+	if(v_length < 0){
+		return"";
+	}
+	var iTemp = v_length -1;
+
+	while(iTemp > -1){
+		if(VALUE.charAt(iTemp) == w_space){
+		}
+		else{
+			strTemp = VALUE.substring(0,iTemp +1);
+			break;
+		}
+		iTemp = iTemp-1;
+
+	} //End While
+	return strTemp;
+
+} //End Function
+
+function LTrim(VALUE){
+	var w_space = String.fromCharCode(32);
+	if(v_length < 1){
+		return"";
+	}
+	var v_length = VALUE.length;
+	var strTemp = "";
+
+	var iTemp = 0;
+
+	while(iTemp < v_length){
+		if(VALUE.charAt(iTemp) == w_space){
+		}
+		else{
+			strTemp = VALUE.substring(iTemp,v_length);
+			break;
+		}
+		iTemp = iTemp + 1;
+	} //End While
+	return strTemp;
+} //End Function
+
+function LeftTrim(){
+	if(CheckEmpty(document.form1.username)){
+		return;
+	}
+	document.form1.username.value = LTrim(document.form1.username.value);
+}
+
+function LeftTrimInd(){
+	if(CheckEmpty(document.form3.username)){
+		return;
+	}
+	document.form3.username.value = LTrim(document.form3.username.value);
+}
+
+function RightTrimInd(){
+	if(CheckEmpty(document.form3.username)){
+		return;
+	}
+	document.form3.username.value = RTrim(document.form3.username.value);
+}
+
+function RightTrim(){
+	if(CheckEmpty(document.form1.username)){
+		return;
+	}
+	document.form1.username.value = RTrim(document.form1.username.value);
+}
+
+function AllTrimInd(){
+	if(CheckEmpty(document.form3.username)){
+		return false;
+	}
+	document.form3.username.value = Trim(document.form3.username.value);
+	return true;
+	//document.form1.submit();
+}
+
+function AllTrim(){
+	if(CheckEmpty(document.form1.username)){
+		return false;
+	}
+	document.form1.username.value = Trim(document.form1.username.value);
+	return true;
+	//document.form1.submit();
+}
+
+function AllTrimTRAI(){
+	if(CheckEmpty(document.form2.username)){
+		return false;
+	}
+	document.form2.username.value = Trim(document.form2.username.value);
+	return true;
+	//document.form2.submit();
+}
+
+
+function CheckEmpty(CONTROL){
+	if(Trim(CONTROL.value)==""){
+		CONTROL.value="";
+		CONTROL.focus();
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
+// Set this variable to a semi-colon list of the names of cookies
+//   you do not want to delete
+var exception_list = "";
+
+function delete_cookie (name, path)
+{
+        // Set expiration date to last year
+	var expiration_date = new Date ();
+	expiration_date . setYear (expiration_date . getYear () - 1);
+	expiration_date = expiration_date . toGMTString ();
+
+	// Expire the cookie
+	var cookie_string = name + "=; expires=" + expiration_date;
+	if (path != null)
+		cookie_string += "; path=" + path;
+	document . cookie = cookie_string;
+}
+
+function name_in_list (n, lst)
+{
+	var arr = lst . split ("; ");
+	for (var j = 0; j < arr . length; j ++) {
+	    if (arr[j] == n)
+	        return true;
+	}
+	return false;
+}
+
+function delete_all_cookies (path, exceptions)
+{
+        // Get cookie list and split into an array of cookie entries
+	var cookie_string = "" + document . cookie;
+	var cookie_array = cookie_string . split ("; ");
+
+	// Delete each cookie ...
+	//   EXCEPT those whose naems appear in the semicolon delimited list
+	//   passed in as the second parameter to this function
+	for (var i = 0; i < cookie_array . length; ++ i) {
+	    var single_cookie = cookie_array [i] . split ("=");
+	    var name = single_cookie [0];
+	    if (name_in_list(name, exceptions) == false)
+	        delete_cookie (name, path);
+	}
+}
+
+function check_cookies (path, exceptions)
+{
+        // Get cookie list and split into an array of cookie entries
+	var cookie_string = "" + document . cookie;
+	var cookie_array = cookie_string . split ("; ");
+
+
+	//   EXCEPT those whose naems appear in the semicolon delimited list
+	//   passed in as the second parameter to this function
+	for (var i = 0; i < cookie_array . length; ++ i) {
+	    var single_cookie = cookie_array [i] . split ("=");
+	    var name = single_cookie [0];
+	    if (name_in_list(name, exceptions) == true)
+	        return true;
+	}
+	return false;
+}
+
+</SCRIPT>
+<NOSCRIPT><B>WARNING:</B> To maintain your login session, make sure that<BR>your
+browser is configured to accept Cookies. </NOSCRIPT><!--- END Cookie check block --->
+
+<table width="773" border="0" align="center" cellpadding="0" cellspacing="0" id="sc_ind" style="margin:0 auto;">
+  <tr>
+    <td>
+<table width="773" border="0" align="center"  cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td width="712" align="right" valign="top" style="padding-top:26px; padding-right:26px;"><a href="http://www.airtel.in/"><img src="/pics/images/airtel_logo.jpg" border="0"></a></td>
+  </tr>
+ <tr><td class="arial11lightgrey" align="center"><table width="712" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="3" align="left"><table width="auto" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="6"><img src="/pics/images/left_red_img.jpg" alt="" ></td>
+              <td style="BACKGROUND-IMAGE: url(/pics/images/mid-tab-strip.jpg); background-repeat:repeat-x; padding-left:15px; padding-right:15px; color:#FFFFFF; font-size:13px; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">my account</td>
+              <td width="9"><img src="/pics/images/right_red.jpg" alt="" width="9" height="25"></td>
+            </tr>
+          </table></td>
+          </tr>
+        <tr>
+          <td colspan="3" align="left"><img src="/pics/images/bottom_strip.jpg" alt=""></td>
+        </tr>
+      </table></td></tr>
+  <tr>
+    <td height="25" align="center"><table width="95%" border="0" cellpadding="0" cellspacing="0">
+
+      <tr>
+        <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+
+          <tr>
+            <td height="60" style="padding-top:5px; padding-bottom:30px; " valign="top">
+            <table width="752" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="8" colspan="2"></td>
+    </tr>
+  <tr>
+    <td align="right" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+      <tr>
+        <td align="center" valign="top" style="padding-bottom:0px;">
+		<table width="94%" border="0" cellspacing="0" cellpadding="0">
+
+          <tr>
+            <td align="left" valign="top">
+            	<table width="97%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+
+				<td align="left" valign="top" >
+					
+					<p class="topline">please choose the service you want to access <strong>'my account'</strong> for:</p>
+					<div id="accordion">					
+						<h3><a href="#">My Account - <strong>mobile</strong> (prepaid or postpaid)</a></h3>
+						<div class="details">
+							<img src="/pics/images/mobile.gif" alt="mobile" width="80" height="80" />				
+							<div class="rightBox">
+								<p>The login process has changed. To access <strong>'my account'</strong> for mobile (prepaid or postpaid) </p>					
+								<a href="https://www.airtel.in/myaccount"><img src="/pics/images/click_here.gif" alt="mobile" /></a>
+							</div>
+							<p class="privacy"> You will be redirected to a new login page and we suggest you bookmark that page.</p>
+						</div>
+
+						<h3><a href="#">My Account - <strong>broadband</strong></a></h3>
+						<div class="details">
+							<img src="/pics/images/broadband.gif" alt="broadband" width="80" height="80" />
+							<div class="rightBox">
+								<p>The login process has changed. To access <strong>'my account'</strong> for broadband </p>
+								<a href="https://www.airtel.in/myaccount"><img src="/pics/images/click_here.gif" alt="mobile" /></a>
+							</div>
+							<p class="privacy"> You will be redirected to a new login page and we suggest you bookmark that page.</p>
+						</div>
+
+						<h3><a href="#">My Account - <strong>digital TV</strong></a></h3>
+						<div class="details">
+							<img src="/pics/images/digital_tv.gif" alt="digital_tv" width="80" height="80" />
+							<div class="rightBox">
+								<p>The login process has changed. To access <strong>'my account'</strong> for digital TV </p>
+								<a href="https://www.airtel.in/myaccount"><img src="/pics/images/click_here.gif" alt="mobile" /></a>
+							</div>
+							<p class="privacy"> You will be redirected to a new login page and we suggest you bookmark that page.</p>
+						</div>
+						
+						<h3><a href="#">My Account - <strong>airtel money</strong></a></h3>
+						<div class="details">
+							<img src="/pics/images/airtel_money.gif" alt="airtel_money" width="80" height="80" />
+							<div class="rightBox">
+								<p>The login process has changed. To access <strong>'my account'</strong> for airtel money </p>
+								<a href="https://www.airtel.in/myaccount"><img src="/pics/images/click_here.gif" alt="mobile" /></a>
+							</div>
+							<p class="privacy"> You will be redirected to a new login page and we suggest you bookmark that page.</p>
+						</div>
+						
+						<h3><a href="#">My Account - <strong>4G LTE</strong></a></h3>
+						<div class="details">
+							<img src="/pics/images/4G_LTE.gif" alt="4G_LTE" width="80" height="80" />
+							<div class="rightBox">
+								<p>The login process has changed. To access <strong>'my account'</strong> for 4G LTE </p>
+								<a href="https://www.airtel.in/myaccount"><img src="/pics/images/click_here.gif" alt="mobile" /></a>
+							</div>
+							<p class="privacy"> You will be redirected to a new login page and we suggest you bookmark that page.</p>
+						</div>
+						
+						
+						
+						<h3><a href="#">Login for <strong>corporate coordinator (mobile) and other users (CSR, admin, etc) </strong></a></h3>
+						<div class="details">											
+							<div class="leftSection">
+								<h2>Login for corporate coordinator (mobile)</h2>
+								<ul>
+									<li>Access to your account summary</li>
+									<li>View bills</li>
+									<li>Make payment</li>
+									<li>Manage</li>
+									<li>Raise service requests</li>
+								</ul>
+							</div><!-- Left Section End -->
+							
+					
+							<div class="rightSection">
+								<form onsubmit="return AllTrimInd();" method="post" name="form3" action="/pkmslogin.form">
+									<table width="21" border="0" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td align="left" valign="top"><img src="/pics/images/login-tp.gif" width="213" height="33"></td>
+											</tr>
+											<tr>
+												<td align="center" valign="top" style="border-left:1px solid #c3bebe; border-right:1px solid #c3bebe; background-color:#f7f7f6;">
+													<table width="89%" border="0" cellspacing="0" cellpadding="0">
+														<tbody>
+															<tr>
+																<td colspan="2">&nbsp;</td>
+															</tr>
+															<tr>
+																<td class="td-class" >User Name :</td>
+																<td align="right" valign="middle">
+																	<label>
+																		<input type="text" name="username" tabindex="1" style="width:110px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; color:#5f5f5f; border:1px solid #c3c3c3;" />
+																	</label>
+																</td>
+															</tr>
+															<tr>
+																<td colspan="2">&nbsp;</td>
+															</tr>
+															<tr>
+																<td class="td-class">Password :</td>
+																<td align="right" valign="middle">
+																	<label>
+																		<input type="password" name="password" onkeydown="onKeyDown()" tabindex="2" style="width:110px; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; color:#5f5f5f; border:1px solid #c3c3c3;" />
+																	</label>
+																</td>
+															</tr>
+															<tr>
+																<td colspan="2">&nbsp;</td>
+															</tr>
+															<tr>
+																<td align="left" valign="middle" class="td-class">&nbsp;</td>
+																<td align="right" valign="middle">
+																	<input value="pwd" type="hidden" name="login-form-type">
+																	<input value="0" type="hidden" name="clicked">																			
+																	<input onclick="return clickedButtonInd();" onkeypress="return clickedButtonInd();" tabindex="3" src="/pics/images/submit-button.gif" border="0" type="image">
+																</td>
+															</tr>
+															
+
+<tr>
+                        <td colspan="2" align="left" valign="middle" class="td-class" style="padding-top:10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" valign="middle"><a href="https://ebpp.airtelworld.com/account/Registration/renderForgotPasswordAction.action" onClick="return clickedLinkInd();" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; color:#656565;">Forgot password?</a></td>
+                                                     </tr>
+                        </table></td>
+                        </tr>
+
+
+															
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="left" valign="top"><img src="/pics/images/login-bt.gif" width="213" height="6"></td>
+											</tr>
+										</tbody>
+									</table>
+								</form>
+							</div><!-- Right Section End -->
+							<div class="clearBoth"></div>					
+							<p>* Kidly contact your Relationship Manager to get your Admin Login Id &amp; password for your airtel business requests account</p>
+							<p>For the 'my account' for your personal mobile, fixedline, digital TV or airtel money <a target="_blank" href="https://www.airtel.in/myaccount">click here</a></p>
+							<p>For other users (including CSR, admin etc) use this page for login</p>							
+						</div>
+					</div>
+
+				</td>
+
+
+
+                 <td rowspan="1" align="right">
+
+
+					
+                    <TR>
+                      <td align="left" valign="top"  style="padding-top:15px; padding-bottom:15px; font-family:Arial, Helvetica, sans-serif; font-size:10px; font-weight:normal; color:#5f5f5f;">To view your bill the browser should be able to support 128 bit encryption. <br /> You must use IE, version 6.0. and above to access My Account on airtel website</td>
+                      <TD vAlign="bottom" align="right"><IMG alt=""
+                        src="/pics/images/v-secut.jpg" width="59" height="33"></TD></TR>
+
+            </table></td>
+          </tr>
+
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>            </td>
+          </tr>
+
+        </table></td>
+      </tr>
+
+    </table></td>
+  </tr>
+</table>
+
+<map name="Map">
+  <area shape="rect" coords="645,16,750,53" href="http://www.airtel.in">
+</map>
+</td>
+  </tr>
+  <tr>
+    <td>
+    <table width="778" border="0" align="center" class="footer1" cellpadding="0" cellspacing="0"    style="font-family:Arial, Helvetica, sans-serif; font-size:11px;color:#FFFFFF;">
+		<tr>
+		  <td width="701" style="background-image:url(/pics/images/fotter_bg.gif); background-repeat:repeat-x;padding-top:10px; padding-left:10px; padding-bottom:10px" align="left" valign="top" >&copy; bharti airtel 2013, All Rights Reserved. &nbsp;&nbsp;</td>
+		  <TD class=bottomtxt width="72%" style="background-image:url(/pics/images/fotter_bg.gif); background-repeat:repeat-x;padding-top:10px; padding-left:10px" align=right><A id=20001 class=bottomtxt onclick="return clickedLinkInd();" href="https://ebpp.airtelworld.com/account/Registration/jsp/logindisclaimer.jsp">Disclaimer</A>&nbsp;&nbsp;</TD>
+		</tr>
+	</table>
+	</td>
+  </tr>
+</table>
+
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=779 align=center>
+  <TBODY>
+  <TR id="sc_jersey">
+    <TD>
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" >
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+              <TBODY>
+              <TR>
+				<td width="6"><img src="/pics/images/top-nav-left-curve.jpg" alt="" width="6" height="112"></td>
+				<td align="right" background="/pics/images/top-bg-nav.jpg" style="background-repeat:repeat-x; padding-right:19px;">
+				<img alt="" border="0" src="/pics/images/Airtel_Jersey_logo.gif" width="185" height="105">
+				</td><td width="6">
+				<img src="/pics/images/top-nav-right-curve.jpg" alt="" width="6" height="112"></td>
+              </TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD bgColor=#ffffff>&nbsp;</TD></TR>
+        <TR>
+          <TD style="PADDING-LEFT: 8px; BACKGROUND-REPEAT: repeat-x"
+          bgColor=#ffffff vAlign=top background="">
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width=764>
+              <TBODY>
+              <TR>
+                <TD width=6><IMG alt="" src="/pics/images/crv-left.jpg"
+                  width=6 height=6></TD>
+                <TD
+                style="BACKGROUND-IMAGE: url(/pics/images/line-dot.jpg); BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: left top"
+                vAlign=top width=752 align=left></TD>
+                <TD width=6><IMG alt="" src="/pics/images/crv-right.jpg"
+                  width=6 height=6></TD></TR>
+              <TR>
+                <TD
+                style="BORDER-LEFT: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid"
+                height=103 vAlign=top colSpan=3>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=724
+                  align=center>
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=my_account_17red colSpan=2><IMG
+                        alt="My Account" src="/pics/images/heading.jpg"
+                        width=132 height=19></TD></TR>
+                    <TR>
+                      <TD height=12 colSpan=2></TD></TR>
+                    <TR>
+                      <!--<TD id=00001 class=my_accountpage_text vAlign=top
+                      width=461 align=left>Managing your Airtel account is
+                        just a click away.<BR>Now manage your account for Airtel
+                        postpaid mobile, broadband, digital TV<BR>and home
+                        phones using a single login ID.</TD>-->
+                      <TD id=00002 class=my_accountpage_text vAlign=top
+                      width=461 align=left>Managing your airtel account is
+                        just a click away.</TD>
+                      <TD vAlign=top rowSpan=2>
+                        <FORM onsubmit="return AllTrim();" method=post
+                        name=form1 action=/pkmslogin.form>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width=210
+                        align=right>
+                          <TBODY>
+                          <TR>
+                            <TD
+                            style="BACKGROUND-IMAGE: url(/pics/images/login-bg-top.jpg); PADDING-LEFT: 30px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-POSITION: left top; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 3px"
+                            height=26 width=210 align=left>Login to your
+                              Account</TD></TR>
+                          <TR>
+                            <TD
+                            style="BACKGROUND-IMAGE: url(/pics/images/account-bg-img.jpg); BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 50% top"
+                            height=161 vAlign=top align=middle>
+                              <TABLE border=0 cellSpacing=0 cellPadding=0
+                              width=193>
+                                <TBODY>
+                                <TR>
+                                <TD height=10><IMG alt=""
+                                src="/pics/images/spacer.gif"></TD>
+                                <TD height=10><IMG alt=""
+                                src="/pics/images/spacer.gif"></TD></TR>
+                                <TR>
+                                <TD class=my_accountpage_text height=19 width=78
+                                align=left>User Name:</TD>
+                                <TD width=115 align=left><INPUT class=flat
+                                size=10 name=username> </TD></TR>
+                                <TR>
+                                <TD height=5 align=left><IMG alt=""
+                                src="/pics/images/spacer.gif"></TD>
+                                <TD height=5 align=left><IMG alt=""
+                                src="/pics/images/spacer.gif"></TD></TR>
+                                <TR>
+                                <TD class=my_accountpage_text height=19 width=78
+                                align=left>Password:</TD>
+                                <TD width=115 align=left><INPUT
+                                onkeydown=onKeyDown() class=flat size=10
+                                type=password name=password> </TD></TR>
+                                <TR>
+                                <TD height=12 align=left></TD>
+                                <TD height=12 align=left></TD></TR>
+                                <TR>
+                                <TD class=my_accountpage_text
+                                align=left>&nbsp;</TD><INPUT value=pwd
+                                type=hidden name=login-form-type> <INPUT value=0
+                                type=hidden name=clicked>
+                                <TD align=left><INPUT
+                                onclick="return clickedButton();"
+                                src="/pics/images/submit-btn.jpg"
+                                size=/pics/images/submit-btn.jpg type=image>
+                                </TD></TR>
+                                <!--<TR>
+                                <TD align=left><IMG alt="" vspace=8
+                                src="/pics/images/spacer.gif"></TD>
+                                <TD align=left><IMG alt="" vspace=8
+                                src="/pics/images/spacer.gif"></TD></TR>-->
+                                <TR>
+                                <TD class=my_accountpage_text colSpan=2
+                                align=left>
+								<a href="https://ebpp.airtelworld.com/account/Registration/renderJerseyForgotPasswordAction.action" onClick="return clickedLink();"  class="arial11grey">Forgot password?</a><br>Register now <a href="https://ebpp.airtelworld.com/account/Registration/renderJerseyUserRegistration.action" onClick="return clickedLink();"><img src="/pics/images/black-arrwo.jpg" alt="" width="13" height="13" border="0" align="absmiddle"></a>
+                                </TD></TR></TBODY></TABLE><!--script>
+						document.cookie = 'loginCookie=logout';
+						delete_all_cookies("/","loginCookie;logoutCookie");
+					</script--></FORM></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD class=arial11grey height=15 align=left>
+                        <TABLE border=0 cellSpacing=0 cellPadding=1
+width="100%">
+                          <TBODY>
+                          <TR>
+                            <TD>&nbsp;</TD></TR>
+                          <TR align=left>
+                            <TD id=10001 class=my_accountpage_text><SPAN
+                              class=news_headlines><STRONG>Mobile</STRONG></SPAN><STRONG><BR><BR></STRONG><!--<IMG
+                              alt="" src="/pics/images/right-icon.jpg" width=11
+                              height=10> Pay your airtel bills<BR>--><IMG alt=""
+                              src="/pics/images/right-icon.jpg" width=11
+                              height=10> View your bills<BR><!--<IMG alt=""
+                              src="/pics/images/right-icon.jpg" width=11
+                              height=10> View and Change tariff plans<BR>--><IMG
+                              alt="" src="/pics/images/right-icon.jpg" width=11
+                              height=10> View detailed analysis of your monthly
+                              usage<BR><BR></TD></TR>
+                          <TR align=left>
+                            <!--<TD id=10002 class=my_accountpage_text><SPAN
+                              class=news_headlines><STRONG>Fixedline</STRONG></SPAN><STRONG><BR><BR></STRONG><IMG
+                              alt="" src="/pics/images/right-icon.jpg" width=11
+                              height=10> Pay bills for your broadband and
+                              landline at one place<BR><IMG alt=""
+                              src="/pics/images/right-icon.jpg" width=11
+                              height=10> View your bills in detail<BR><IMG
+                              alt="" src="/pics/images/right-icon.jpg" width=11
+                              height=10> View detailed analysis of your monthly
+                              usage<BR><IMG alt=""
+                              src="/pics/images/right-icon.jpg" width=11
+                              height=10> Send Feedback / Requests<BR><IMG alt=""
+                              src="/pics/images/right-icon.jpg" width=11
+                              height=10> View Payment History<BR><BR></TD>--></TR>
+                          <TR align=left>
+                           <!-- <TD id=10003 class=my_accountpage_text><SPAN
+                              class=news_headlines><STRONG>digital
+                              TV</STRONG></SPAN><STRONG><BR><BR></STRONG><IMG
+                              alt="" src="/pics/images/right-icon.jpg" width=11
+                              height=10> Recharge your digital TV
+                              account<BR><IMG alt=""
+                              src="/pics/images/right-icon.jpg" width=11
+                              height=10> View pay per view movie details<BR><IMG
+                              alt="" src="/pics/images/right-icon.jpg" width=11
+                              height=10> Order pay per view movies<BR><BR></TD>--></TR>
+                          <TR align=left>
+                            <!--<TD id=10004 class=my_accountpage_text><SPAN
+                              class=news_headlines><STRONG>Enterprise &amp;
+                              Wholesale
+                              Data</STRONG></SPAN><STRONG><BR><BR></STRONG><IMG
+                              alt="" src="/pics/images/right-icon.jpg" width=11
+                              height=10> Create Service Request<BR><IMG alt=""
+                              src="/pics/images/right-icon.jpg" width=11
+                              height=10> View Circuit Details<BR><IMG alt=""
+                              src="/pics/images/right-icon.jpg" width=11
+                              height=10> View Uptime Performance Reports </TD>--></TR>
+                          <TR>
+                            <TD class=arial11grey>&nbsp;</TD></TR>
+                          <TR>
+                            <TD class=my_accountpage_text>Still not
+registered?
+						<a href="https://ebpp.airtelworld.com/account/Registration/renderJerseyUserRegistration.action" onClick="return clickedLink();" class="arial11red">click here</a>
+                               <BR>Create your account right now and get
+                              everything right on your finger
+                          tips.<BR></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <!--<TD id=10005 class=my_accountpage_text colSpan=2>Note:
+                        Online Account creation/Registration is not applicable
+                        for Enterprise &amp; Wholesale Data customers. </TD>-->
+                     </TR></TR>
+                    <TR>
+                      <TD height=10></TD>
+                      <TD height=10 vAlign=top align=right></TD></TR>
+                    <TR>
+                      <TD class=arial11grey align=left>&nbsp;</TD>
+                      <TD vAlign=top align=right><IMG alt=""
+                        src="/pics/images/v-secut.jpg" width=59 height=33></TD></TR>
+                    <TR>
+                      <TD height=10></TD>
+                      <TD height=10 vAlign=top align=right></TD></TR>
+                    <TR>
+                      <TD
+                      style="FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 9px"
+                      height=10 colSpan=2>To view your bill the browser should
+                        be able to support 128 bit encryption. You must use IE,
+                        version 5.5. and above to access My Account on airtel
+                        website<BR></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD height=6><IMG alt=""
+                  src="/pics/images/crv-left.bottom.jpg" width=6 height=6></TD>
+                <TD
+                style="BACKGROUND-IMAGE: url(/pics/images/line-dot.jpg); BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: left bottom"></TD>
+                <TD><IMG alt="" src="/pics/images/crv-right-bottom.jpg"
+                  width=6 height=6></TD></TR></TBODY></TABLE><BR></TD></TR>
+        <TR>
+          <TD
+          style="PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND-REPEAT: repeat-x"
+          bgColor=#ffffff height=32 background=/pics/images/footer-bg.gif>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+              <TBODY>
+              <TR>
+                <TD class=bottomtxt width="28%"><!--© bharti airtel 2009--></TD>
+                <TD class=bottomtxt width="72%" align=right><!--<A id=20001
+                  class=bottomtxt onclick="return clickedLink();"
+                  href="https://ebpp.airtelworld.com/care/RetailUserRegistration/jsp/logindisclaimer.jsp">Disclaimer</A>-->&nbsp;&nbsp;</TD>
+                <TD class=bottomtxt width="72%" align=right><A id=20002
+                  class=bottomtxt onclick="return clickedLink();"
+                  href="https://ebpp.airtelworld.com/account/Registration/jsp/Jersey-Agreement.html">Disclaimer</A>&nbsp;&nbsp;</TD></TR>
+                  </TBODY></TABLE>
+                  </TD></TR>
+                  </TBODY></TABLE>
+              </TD></TR></TBODY></TABLE>
+
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=779 align=center>
+  <TBODY>
+  <TR id="trai">
+    <TD>
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" >
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+              <TBODY>
+              <TR>
+                <TD width=6><IMG alt=""
+                  src="/pics/images/top-nav-left-curve.jpg" width=6
+height=72></TD>
+                <TD style="PADDING-RIGHT: 19px; BACKGROUND-REPEAT: repeat-x"
+                background=/pics/images/top-bg-nav.jpg align=right><IMG
+                  border=0 alt="" src="/pics/images/airtel_logo.jpg" width=103
+                  height=36> </TD>
+                <TD width=6><IMG alt=""
+                  src="/pics/images/top-nav-right-curve.jpg" width=6
+                height=72></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD bgColor=#ffffff>&nbsp;</TD></TR>
+        <TR>
+          <TD style="PADDING-LEFT: 8px; BACKGROUND-REPEAT: repeat-x"
+          bgColor=#ffffff vAlign=top background="">
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width=764>
+              <TBODY>
+              <TR>
+                <TD width=6><IMG alt="" src="/pics/images/crv-left.jpg"
+                  width=6 height=6></TD>
+                <TD
+                style="BACKGROUND-IMAGE: url(/pics/images/line-dot.jpg); BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: left top"
+                vAlign=top width=752 align=left></TD>
+                <TD width=6><IMG alt="" src="/pics/images/crv-right.jpg"
+                  width=6 height=6></TD></TR>
+              <TR>
+                <TD
+                style="BORDER-LEFT: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid"
+                height=103 vAlign=top colSpan=3>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0 width=724
+                  align=center>
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD
+                      style="LINE-HEIGHT: 15px; FONT-FAMILY: Humnst777 BT; COLOR: #ec1c2c; FONT-SIZE: 18px; FONT-WEIGHT: bold; TEXT-DECORATION: none"
+                      colSpan=2 align=middle>Subscriber Search Portal</TD></TR>
+                    <TR>
+                      <TD height=12 colSpan=2></TD></TR>
+                    <TR>
+                      <TD id=00001 class=my_accountpage_text vAlign=top
+                      width=461 align=left></TD>
+                      <TD id=00002 class=my_accountpage_text vAlign=top
+                      width=461 align=left></TD>
+                      <TD vAlign=top rowSpan=2>
+                        <FORM onsubmit="return AllTrimTRAI();" method=post
+                        name=form2 action=/pkmslogin.form>
+                        <TABLE border=0 cellSpacing=0 cellPadding=0 width=210
+                        align=right>
+                          <TBODY>
+                          <TR>
+                            <TD
+                            style="BACKGROUND-IMAGE: url(/pics/images/login-bg-top.jpg); PADDING-LEFT: 30px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-POSITION: left top; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 3px"
+                            height=26 width=210 align=left>Login to your
+                              Account</TD></TR>
+                          <TR>
+                            <TD
+                            style="BACKGROUND-IMAGE: url(/pics/images/account-bg-img.jpg); BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 50% top"
+                            height=161 vAlign=top align=middle>
+                              <TABLE border=0 cellSpacing=0 cellPadding=0
+                              width=193>
+                                <TBODY>
+                                <TR>
+                                <TD height=10><IMG alt=""
+                                src="/pics/images/spacer.gif"></TD>
+                                <TD height=10><IMG alt=""
+                                src="/pics/images/spacer.gif"></TD></TR>
+                                <TR>
+                                <TD class=my_accountpage_text height=19 width=78
+                                align=left>User Name:</TD>
+                                <TD width=115 align=left><INPUT class=flat
+                                size=10 name=username> </TD></TR>
+                                <TR>
+                                <TD height=5 align=left><IMG alt=""
+                                src="/pics/images/spacer.gif"></TD>
+                                <TD height=5 align=left><IMG alt=""
+                                src="/pics/images/spacer.gif"></TD></TR>
+                                <TR>
+                                <TD class=my_accountpage_text height=19 width=78
+                                align=left>Password:</TD>
+                                <TD width=115 align=left><INPUT
+                                onkeydown=onKeyDown() class=flat size=10
+                                type=password name=password INPUT> </TD></TR>
+                                <TR>
+                                <TD height=12 align=left></TD>
+                                <TD height=12 align=left></TD></TR>
+                                <TR>
+                                <TD class=my_accountpage_text
+                                align=left>&nbsp;</TD><INPUT value=pwd
+                                type=hidden name=login-form-type> <INPUT value=0
+                                type=hidden name=clicked>
+                                <TD align=left><INPUT
+                                onclick="return clickedButtonTRAI();"
+                                src="/pics/images/submit-btn.jpg"
+                                size=/pics/images/submit-btn.jpg type=image>
+                                </TD></TR>
+                                <!--<TR>
+                                <TD align=left><IMG alt="" vspace=8
+                                src="/pics/images/spacer.gif"></TD>
+                                <TD align=left><IMG alt="" vspace=8
+                                src="/pics/images/spacer.gif"></TD></TR>-->
+								</TBODY></TABLE>
+								<!--script>
+						document.cookie = 'loginCookie=logout';
+						delete_all_cookies("/","loginCookie;logoutCookie");
+					</script--></FORM></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD class=my_account_17red height=15 vAlign=top
+                        align=left>Login Screen</TD></TR>
+                    <TR>
+                      <TD class=my_accountpage_text colSpan=2></TD></TR></TR>
+                    <TR>
+                      <TD height=10></TD>
+                      <TD height=10 vAlign=top align=right></TD></TR>
+                    <TR>
+                      <TD height=10></TD>
+                      <TD height=10 vAlign=top
+                align=right></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD style="BORDER-LEFT: #cccccc 1px solid"
+                height=10>&nbsp;&nbsp;</TD>
+                <TD
+                style="FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 9px; BORDER-RIGHT: #cccccc 1px solid"
+                height=10 colSpan=2>To view this portal you must use IE,
+                  version 5.5. and above.<BR></TD></TR>
+              <TR>
+                <TD height=6><IMG alt=""
+                  src="/pics/images/crv-left.bottom.jpg" width=6 height=6></TD>
+                <TD
+                style="BACKGROUND-IMAGE: url(/pics/images/line-dot.jpg); BACKGROUND-REPEAT: repeat-x; BACKGROUND-POSITION: left bottom"></TD>
+                <TD><IMG alt="" src="/pics/images/crv-right-bottom.jpg"
+                  width=6 height=6></TD></TR></TBODY></TABLE><BR></TD></TR>
+        <TR>
+          <TD
+          style="PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND-REPEAT: repeat-x"
+          bgColor=#ffffff height=32 background=/pics/images/footer-bg.gif>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+              <TBODY>
+              <TR>
+                <TD class=bottomtxt width="28%">© bharti airtel 2009</TD>
+                <TD class=bottomtxt width="72%"
+              align=right>&nbsp;&nbsp;</TD></TR></TBODY></TABLE>
+              </TD></TR></TBODY></TABLE>
+              </TD></TR></TBODY></TABLE>
+<SCRIPT language=JavaScript>
+		var trai='';
+		for (var i in location) {
+			if(i=='href')
+				 trai = location[i];
+
+		}
+		if(trai.indexOf('traicare')>0){
+//				document.getElementById('sc').style.display = "none";
+				document.getElementById('sc_jersey').style.display = "none";
+				document.getElementById('sc_ind').style.display = "none";
+				document.getElementById('trai').style.display = "block";
+		}else{
+				//document.getElementById('sc').style.display = "block";
+				document.getElementById('trai').style.display = "none";
+
+
+			var timeZone = new Date().getTimezoneOffset();
+			if("0"==timeZone || "-60"==timeZone){
+				document.getElementById('sc_jersey').style.display = "block";
+				document.getElementById('sc_ind').style.display = "none";
+//				document.getElementById('10002').style.display = "none";
+//				document.getElementById('10003').style.display = "none";
+//				document.getElementById('10004').style.display = "none";
+//				document.getElementById('10005').style.display = "none";
+//				document.getElementById('20001').style.display = "none";
+//				document.getElementById('20002').style.display = "block";
+//				document.getElementById('00001').style.display = "none";
+//				document.getElementById('00002').style.display = "block";
+				function setFocus()
+				{
+					document.form1.username.focus();
+				}
+				setTimeout(setFocus, 400);
+			}else{
+				document.getElementById('sc_ind').style.display = "block";
+				document.getElementById('sc_jersey').style.display = "none";
+//				document.getElementById('20001').style.display = "block";
+//				document.getElementById('20002').style.display = "none";
+//				document.getElementById('00001').style.display = "block";
+//				document.getElementById('00002').style.display = "none";
+				function setFocus1()
+				{
+				//	document.form3.username.focus();
+				}
+				setTimeout(setFocus1, 400);
+			}
+		}
+		</SCRIPT>
+		<script type="text/javascript">
+
+		function get('src'){
+   if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+      return decodeURIComponent(name[1]);
+}
+		$(document).ready(function(){
+			$('h3').click(function(){
+				$('h3').removeClass('active');	
+				$(this).addClass("active");
+			return false;
+			});
+			$('h3:first').click();
+		});
+	</script>
+</BODY></HTML>
