@@ -1,0 +1,5 @@
+# Logfile created on 2014-07-16 11:59:05 +0530 by logger.rb/44203
+I, [2014-07-16T11:59:05.211730 #15975]  INFO -- BankAccount (Abhinay): Depositing 100
+I, [2014-07-16T11:59:37.349964 #16061]  INFO -- BankAccount (Abhinay): Depositing 100
+I, [2014-07-16T12:00:04.254805 #16075]  INFO -- BankAccount (Abhinay): Depositing 100
+I, [2014-07-16T12:00:04.255113 #16075]  INFO -- BankAccount (Abhinay): withdrawing 200

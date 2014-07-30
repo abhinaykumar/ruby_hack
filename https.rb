@@ -1,0 +1,1 @@
+Redirecting to <a href="https://www.ruby-lang.org/en/LICENSE.txt">https://www.ruby-lang.org/en/LICENSE.txt</a>
