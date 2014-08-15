@@ -1,0 +1,17 @@
+1. change the permission of the file
+using "chmod 755 fileName.any"
+::After this step you will be able to run file using "./fileName.any"
+
+2. chnage "fileName.any" to "fileName"
+
+3. check whether you have /usr/local/bin directory or not.
+if not then make one "mkdir -p /usr/local/bin"
+
+4. After creating this dir /usr/local/bin, push
+a $PATH of  your "fileName" so that bash can look
+for that using this dir /usr/local/bin
+using command:: "ln -s $PWD/fileName /usr/local/bin" 
+
+5. then try running by simply typing the
+file name "fileName".
+
