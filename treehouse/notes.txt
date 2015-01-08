@@ -1,4 +1,0 @@
-1. Use "load" method to load .rb file to "irb"
-ex: load './bank_account.rb'
-=> true
-2.
